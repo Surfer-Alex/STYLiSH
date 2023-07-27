@@ -1,0 +1,28 @@
+{
+  "hosting": {
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/home",
+        "destination":"/legacyhtml/index.html"
+      },
+      {
+        "source": "/product",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/cart",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/login",
+        "destination": "/index.html"
+      }
+    ] 
+  }
+}
